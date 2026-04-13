@@ -1,4 +1,7 @@
-const product=["Laptop", "Phone", "Headphones", "Monitor"];
+const products=["Laptop", "Phone", "Headphones", "Monitor"];
+function logFirstProduct(products){
+  console.log(products[0])
+}
 
 
 
