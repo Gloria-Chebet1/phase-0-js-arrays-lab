@@ -1,37 +1,20 @@
-const products=["Laptop", "Phone", "Headphones", "Monitor"];
+const products = ["Laptop", "Phone", "Headphones", "Monitor"];
+
 function logFirstProduct(products){
-  console.log(products[0]);
+    return products[0];
 }
-logFirstProduct(products);
 
 function addProduct(products, productName){
-  products.push(productName);
+    products.push(productName);
+    return products;
 }
-addProduct(products, "Tablet");
-console.log(products);
 
 function updateProductName(products, index, newName){
-  products[index]=newName;
+    products[index] = newName;
+    return products;
 }
-updateProductName(products, 1, "Smartphone");
-console.log(products);
 
 function removeLastProduct(products){
-  products.pop();
+    products.pop();
+    return products;
 }
-removeLastProduct(products);
-console.log(products);
-
-
-
-
-
-
-// Export the necessary parts for testing
-module.exports = {
-  logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
-  addProduct: typeof addProduct !== 'undefined' ? addProduct : undefined,
-  updateProductName: typeof updateProductName !== 'undefined' ? updateProductName : undefined,
-  removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
-  products
-};
