@@ -1,4 +1,4 @@
-// Write your code here
+const product=["Laptop", "Phone", "Headphones", "Monitor"];
 
 
 
