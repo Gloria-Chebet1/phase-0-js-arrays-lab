@@ -1,20 +1,17 @@
-const products = ["Laptop", "Phone", "Headphones", "Monitor"];
-
 function logFirstProduct(products){
     return products[0];
 }
 
 function addProduct(products, productName){
-    products.push(productName);
-    return products;
+    return [...products, productName];
 }
 
 function updateProductName(products, index, newName){
-    products[index] = newName;
-    return products;
+    const updated = [...products];
+    updated[index] = newName;
+    return updated;
 }
 
 function removeLastProduct(products){
-    products.pop();
-    return products;
+    return products.slice(0, -1);
 }
